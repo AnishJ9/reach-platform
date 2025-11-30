@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACH Partnerships Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-cream: #FAF8F5;
+            --color-warm-white: #FFFEFB;
+            --color-sand: #F0EBE3;
+            --color-stone: #E8E2D9;
+            --color-text: #2D2A26;
+            --color-text-secondary: #5C5752;
+            --color-text-muted: #8A857D;
+            --color-teal: #2A7C7C;
+            --color-teal-dark: #1E5F5F;
+            --color-teal-light: #E8F4F4;
+            --color-terracotta: #C4724E;
+            --color-terracotta-light: #FAF0EC;
+            --font-serif: 'Source Serif 4', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 18px; scroll-behavior: smooth; }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-cream);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        h1, h2, h3 {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        p { color: var(--color-text-secondary); }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Navigation */
+        .nav {
+            background: rgba(250,248,245,0.95);
+            backdrop-filter: blur(12px);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--color-stone);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text);
+        }
+        
+        .logo-mark {
+            width: 32px;
+            height: 32px;
+            background: var(--color-teal);
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover { color: var(--color-teal); }
+        
+        .nav-cta {
+            background: var(--color-teal);
+            color: white !important;
+            padding: 0.6rem 1.25rem;
+            border-radius: 6px;
+        }
+        
+        .nav-cta:hover { background: var(--color-teal-dark); }
+        .nav-access { color: var(--color-terracotta) !important; font-weight: 600; }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 2rem 100px;
+            background: linear-gradient(180deg, var(--color-warm-white) 0%, var(--color-cream) 100%);
+        }
+        
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-eyebrow {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--color-teal);
+            margin-bottom: 1.25rem;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.25rem, 4vw, 3rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+            max-width: 480px;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 1.75rem;
+            border-radius: 8px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+            font-size: 0.95rem;
+        }
+        
+        .btn--primary { background: var(--color-teal); color: white; }
+        .btn--primary:hover { background: var(--color-teal-dark); transform: translateY(-1px); }
+        .btn--secondary { background: transparent; color: var(--color-teal); border: 1.5px solid var(--color-teal); }
+        .btn--secondary:hover { background: var(--color-teal-light); }
+        .btn--accent { background: var(--color-terracotta); color: white; }
+        .btn--accent:hover { background: #A85E3E; transform: translateY(-1px); }
+        
+        .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+        
+        /* Hero Stats */
+        .hero-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .hero-stat {
+            background: white;
+            border-radius: 12px;
+            padding: 1.75rem;
+            border: 1px solid var(--color-stone);
+        }
+        
+        .hero-stat-number {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-teal);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-stat-number.accent { color: var(--color-terracotta); }
+        
+        .hero-stat-label {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+        
+        /* Fellowship Section */
+        .fellowship {
+            padding: 6rem 0;
+            background: var(--color-warm-white);
+        }
+        
+        .fellowship-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .fellowship-header h2 {
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            margin-bottom: 0.75rem;
+        }
+        
+        .fellowship-header p {
+            color: var(--color-text-secondary);
+            font-size: 1.1rem;
+        }
+        
+        .fellowship-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .fellowship-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--color-stone);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .fellowship-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+        
+        .fellowship-card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+        }
+        
+        .fellowship-card-icon.teal { background: var(--color-teal-light); color: var(--color-teal); }
+        .fellowship-card-icon.terracotta { background: var(--color-terracotta-light); color: var(--color-terracotta); }
+        
+        .fellowship-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .fellowship-card p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* Model Section */
+        .model {
+            padding: 6rem 0;
+            background: var(--color-teal);
+            color: white;
+        }
+        
+        .model-inner {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .model h2 {
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .model-text p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .model-tagline {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.7);
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.15);
+        }
+        
+        .model-steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .model-step {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        
+        .model-step-num {
+            font-family: var(--font-serif);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 0.5rem;
+        }
+        
+        .model-step h4 {
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+        }
+        
+        .model-step p {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.65);
+            line-height: 1.5;
+        }
+        
+        /* Access Section */
+        .access {
+            padding: 6rem 0;
+            background: var(--color-terracotta-light);
+        }
+        
+        .access-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .access h2 {
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            margin-bottom: 1rem;
+        }
+        
+        .access-text p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .access-topics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+        
+        .access-topic {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text);
+            border: 1px solid var(--color-stone);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .access-topic:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        
+        .access-topic.highlight {
+            border-color: var(--color-terracotta);
+            background: white;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 6rem 0;
+            text-align: center;
+            background: var(--color-cream);
+        }
+        
+        .cta h2 {
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            margin-bottom: 0.75rem;
+        }
+        
+        .cta > p {
+            color: var(--color-text-secondary);
+            font-size: 1.05rem;
+            max-width: 500px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--color-text);
+            color: white;
+            padding: 3.5rem 2rem 2rem;
+        }
+        
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-brand p {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            max-width: 280px;
+            margin-top: 0.75rem;
+        }
+        
+        .footer-links { display: flex; gap: 4rem; }
+        
+        .footer-col h4 {
+            font-family: var(--font-serif);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a {
+            color: rgba(255,255,255,0.65);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+        .footer-col a:hover { color: white; }
+        
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 2.5rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.4;
+        }
+        
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+            .hero-stats { max-width: 400px; }
+            .fellowship-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+            .model-inner { grid-template-columns: 1fr; gap: 3rem; }
+            .model-steps { max-width: 400px; }
+            .access-inner { grid-template-columns: 1fr; gap: 3rem; }
+            .access-topics { max-width: 400px; }
+        }
+        
+        @media (max-width: 600px) {
+            .nav { flex-direction: column; gap: 1rem; padding: 1rem; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+            .hero { padding: 100px 1.5rem 60px; min-height: auto; }
+            .hero-stats { grid-template-columns: 1fr; }
+            .model-steps { grid-template-columns: 1fr; }
+            .access-topics { grid-template-columns: 1fr; }
+            .footer-links { flex-direction: column; gap: 2rem; }
+            .btn-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="#" class="nav-logo">
+            <span class="logo-mark">R</span>
+            REACH Partnerships
+        </a>
+        <ul class="nav-links">
+            <li><a href="#fellowship">Fellowship</a></li>
+            <li><a href="#model">How It Works</a></li>
+            <li><a href="access.html" class="nav-access">REACH Access →</a></li>
+            <li><a href="exchange.html" class="nav-cta">Portal</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Resources for Advancing Education and Careers in Health</p>
+                <h1>Funding the Next Generation of Physician-Scientists</h1>
+                <p class="hero-subtitle">
+                    REACH supports medical trainees pursuing NIH K-award career development through sustainable sponsorship-funded research fellowships.
+                </p>
+                <div class="btn-group">
+                    <a href="exchange.html" class="btn btn--primary">Apply for Fellowship</a>
+                    <a href="exchange.html" class="btn btn--secondary">Become a Sponsor</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">$11,500</div>
+                    <div class="hero-stat-label">Fellowship funding for pilot data</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">12 mo</div>
+                    <div class="hero-stat-label">Program duration</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">3–5×</div>
+                    <div class="hero-stat-label">Relocations during training</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number accent">K01 K08 K23</div>
+                    <div class="hero-stat-label">Target award mechanisms</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="fellowship" id="fellowship">
+        <div class="container">
+            <div class="fellowship-header">
+                <h2>The REACH Fellowship</h2>
+                <p>Funding, structure, and support for K-award preparation</p>
+            </div>
+            
+            <div class="fellowship-grid">
+                <div class="fellowship-card">
+                    <div class="fellowship-card-icon teal">$</div>
+                    <h3>Research Funding</h3>
+                    <p>$11,500 for pilot data, supplies, travel, and publication costs to build your K-award application.</p>
+                </div>
+                <div class="fellowship-card">
+                    <div class="fellowship-card-icon teal">◎</div>
+                    <h3>Structured Guidance</h3>
+                    <p>Framework addressing all K-award components with clear milestones and expert feedback.</p>
+                </div>
+                <div class="fellowship-card">
+                    <div class="fellowship-card-icon terracotta">✓</div>
+                    <h3>Weekly Check-ins</h3>
+                    <p>Track progress, identify barriers early, and stay accountable throughout the program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="model" id="model">
+        <div class="container">
+            <div class="model-inner">
+                <div class="model-text">
+                    <h2>A Sustainable Model</h2>
+                    <p>
+                        REACH generates recurring revenue through relocation referrals and sponsor partnerships—not one-time donations. Medical trainees relocate constantly, and we connect them with vetted service providers. Referral fees fund fellowships.
+                    </p>
+                    <p class="model-tagline">"With every move, we make a difference."</p>
+                </div>
+                <div class="model-steps">
+                    <div class="model-step">
+                        <div class="model-step-num">01</div>
+                        <h4>Trainees Relocate</h4>
+                        <p>Residency, fellowship, faculty positions</p>
+                    </div>
+                    <div class="model-step">
+                        <div class="model-step-num">02</div>
+                        <h4>REACH Connects</h4>
+                        <p>Vetted real estate and service providers</p>
+                    </div>
+                    <div class="model-step">
+                        <div class="model-step-num">03</div>
+                        <h4>Revenue Generated</h4>
+                        <p>Referral and sponsorship partnerships</p>
+                    </div>
+                    <div class="model-step">
+                        <div class="model-step-num">04</div>
+                        <h4>Fellowships Funded</h4>
+                        <p>More researchers supported each year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="access">
+        <div class="container">
+            <div class="access-inner">
+                <div class="access-text">
+                    <h2>REACH Access</h2>
+                    <p>
+                        Free knowledge base covering K-award preparation, research methods, career development, and relocation guidance—open to all medical trainees.
+                    </p>
+                    <a href="access.html" class="btn btn--accent">Explore Resources →</a>
+                </div>
+                <div class="access-topics">
+                    <div class="access-topic">K-Award Preparation</div>
+                    <div class="access-topic">Research Methods</div>
+                    <div class="access-topic">Career Development</div>
+                    <div class="access-topic highlight">Relocation & Moving</div>
+                    <div class="access-topic">Finance & Insurance</div>
+                    <div class="access-topic">Wellness & Balance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <h2>Partner With Us</h2>
+        <p>Whether you're a trainee seeking fellowship support or a service provider looking to connect with physicians during career transitions.</p>
+        <div class="btn-group" style="justify-content: center;">
+            <a href="exchange.html" class="btn btn--primary">Apply for Fellowship</a>
+            <a href="exchange.html" class="btn btn--secondary">Become a Sponsor</a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo" style="color: white;">
+                    <span class="logo-mark">R</span>
+                    REACH Partnerships
+                </a>
+                <p>Resources for Advancing Education and Careers in Health</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#fellowship">Fellowship</a></li>
+                        <li><a href="access.html">REACH Access</a></li>
+                        <li><a href="exchange.html">Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@reachpartnerships.org">info@reachpartnerships.org</a></li>
+                        <li style="color: rgba(255,255,255,0.65); font-size: 0.85rem;">Atlanta, GA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 REACH Partnerships Foundation
+        </div>
+    </footer>
+</body>
+</html>
