@@ -1,0 +1,84 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "status": "published",
+      "category": "prevent",
+      "topic": "k-award",
+      "stages": ["resident", "fellow", "early-faculty"],
+      "title": "The Complete K-Award Application Timeline: What to Do 18 Months Before Submission",
+      "description": "A month-by-month guide to preparing a competitive K-award application, from identifying your mentor to submission day.",
+      "readTime": "12 min read",
+      "updated": "November 2025",
+      "sourcePatterns": ["mentor identification", "K-award timeline", "preliminary data"],
+      "content": "<p>One of the biggest mistakes early-career researchers make is underestimating the time needed to prepare a competitive K-award application. This guide walks you through an 18-month timeline that will set you up for success.</p>\n\n<h2>18-12 Months Before Submission</h2>\n\n<h3>Identify Your Primary Mentor</h3>\n<p>Your mentor choice is arguably the most important decision in your K-award journey. Look for someone who:</p>\n<ul>\n<li>Has successfully mentored previous K-awardees to completion</li>\n<li>Has an active research program with funding</li>\n<li>Will have time for regular meetings (aim for biweekly minimum)</li>\n<li>Has expertise complementary to your goals, not identical</li>\n</ul>\n\n<div class=\"callout\">\n<div class=\"callout-title\">💡 Pro Tip</div>\n<p>Ask potential mentors about their previous mentees. Where are they now? Did they get K-awards? R01s? This track record matters to reviewers.</p>\n</div>\n\n<h3>Define Your Research Question</h3>\n<p>Your research question should be:</p>\n<ul>\n<li>Significant enough to matter, but focused enough to be feasible</li>\n<li>Aligned with your mentor's expertise and resources</li>\n<li>Connected to a clear path toward R01 independence</li>\n</ul>\n\n<h2>12-6 Months Before Submission</h2>\n\n<h3>Generate Preliminary Data</h3>\n<p>K-awards require preliminary data showing feasibility. This is where many applicants struggle—you need data to get the award, but you need funding to get data.</p>\n\n<p>Options for generating preliminary data:</p>\n<ul>\n<li>Institutional pilot grants (check with your research office)</li>\n<li>Foundation awards (many specialty societies offer small grants)</li>\n<li>Collaboration with established labs</li>\n<li>Analysis of existing datasets</li>\n</ul>\n\n<h3>Build Your Mentorship Committee</h3>\n<p>Beyond your primary mentor, you need a committee with complementary expertise. Consider including:</p>\n<ul>\n<li>A methodologist or biostatistician</li>\n<li>Someone with expertise in your target population</li>\n<li>A senior researcher who can speak to career development</li>\n</ul>\n\n<h2>6-3 Months Before Submission</h2>\n\n<h3>Write Your Specific Aims</h3>\n<p>The Specific Aims page is the most important page of your application. It should clearly convey:</p>\n<ul>\n<li>The problem and why it matters</li>\n<li>What's known and what's unknown (the gap)</li>\n<li>Your hypothesis and approach</li>\n<li>Expected outcomes and impact</li>\n</ul>\n\n<blockquote>\"If your Specific Aims page doesn't grab reviewers, they won't read the rest of your application with enthusiasm.\" — NIH Program Officer</blockquote>\n\n<h2>Final 3 Months</h2>\n\n<h3>Complete All Sections</h3>\n<p>Draft, revise, and polish all required sections. Get feedback from multiple readers, including people outside your immediate field.</p>\n\n<h3>Institutional Review</h3>\n<p>Most institutions require internal review before submission. Build in at least 2-3 weeks for this process.</p>\n\n<div class=\"callout\">\n<div class=\"callout-title\">🎯 Key Takeaway</div>\n<p>The K-award is as much about demonstrating your potential as it is about the science. Show reviewers you have a clear career vision, strong mentorship, and a feasible path to independence.</p>\n</div>"
+    },
+    {
+      "id": 2,
+      "status": "published",
+      "category": "identify",
+      "topic": "k-award",
+      "stages": ["resident", "fellow", "early-faculty"],
+      "title": "Signs Your K-Award Application Needs Work Before Submission",
+      "description": "Common red flags that indicate your application may not be competitive, and how to address them.",
+      "readTime": "8 min read",
+      "updated": "November 2025",
+      "sourcePatterns": ["K-award rejection", "application weakness", "reviewer feedback"],
+      "content": "<p>Before you submit your K-award application, take time to honestly assess whether it's ready. Here are common warning signs that suggest more work is needed.</p>\n\n<h2>Red Flag #1: Your Mentor Can't Describe Your Career Path</h2>\n<p>If your primary mentor struggles to articulate where you'll be in 5-10 years and how you'll get there, reviewers will notice. The mentorship plan should tell a clear story of development.</p>\n\n<h2>Red Flag #2: Your Specific Aims Don't Fit on One Page</h2>\n<p>If you can't distill your research into a single compelling page, your project may be unfocused. Clarity is essential—if reviewers are confused, they won't score you well.</p>\n\n<h2>Red Flag #3: You're Proposing Too Much (Or Too Little)</h2>\n<p>K-awards fund your development, not a full research program. If your aims would take 10 years to complete, or could be done in 6 months, recalibrate.</p>\n\n<h2>Red Flag #4: No One Outside Your Lab Has Read It</h2>\n<p>Fresh eyes catch problems you've become blind to. Get feedback from people who don't already know your work intimately.</p>\n\n<h2>Red Flag #5: You Can't Explain Why This Specific NIH Institute</h2>\n<p>If you don't know which institute funds your type of research, you haven't done enough homework. Institute alignment matters.</p>\n\n<div class=\"callout\">\n<div class=\"callout-title\">🔧 What To Do</div>\n<p>If you identified with any of these red flags, don't panic—and don't submit prematurely. Take the time to address these issues. A well-prepared resubmission beats a rushed first attempt.</p>\n</div>"
+    },
+    {
+      "id": 3,
+      "status": "published",
+      "category": "remove",
+      "topic": "career",
+      "stages": ["student", "resident", "fellow"],
+      "title": "How to Find a Research Mentor When You Don't Have Connections",
+      "description": "Practical strategies for first-generation physicians and trainees without existing networks to identify and approach potential mentors.",
+      "readTime": "10 min read",
+      "updated": "November 2025",
+      "sourcePatterns": ["mentor search", "first-generation", "networking difficulty"],
+      "content": "<p>If you didn't grow up in an academic medicine family or train at an elite institution, finding a research mentor can feel impossible. The \"hidden curriculum\" assumes you already know how to navigate this. This guide makes it explicit.</p>\n\n<h2>Step 1: Identify Potential Mentors</h2>\n\n<h3>Use NIH Reporter</h3>\n<p>NIH RePORTER (reporter.nih.gov) is free and searchable. Look for:</p>\n<ul>\n<li>Faculty with active K-award grants (search \"K08\" or \"K23\" + your topic)</li>\n<li>Faculty with R01s in your area of interest</li>\n<li>Look at their \"Other Projects\" to see their scope</li>\n</ul>\n\n<h3>Check Publication Records</h3>\n<p>Use PubMed to find researchers publishing in your area. Look for:</p>\n<ul>\n<li>Senior authors (usually last author position)</li>\n<li>Papers that include trainees as first authors (shows they mentor)</li>\n<li>Recent publications (shows active program)</li>\n</ul>\n\n<h2>Step 2: Do Your Homework Before Reaching Out</h2>\n<p>Before you email anyone:</p>\n<ul>\n<li>Read their last 5 papers</li>\n<li>Check their lab website for current projects and team</li>\n<li>Look up their NIH funding on RePORTER</li>\n<li>Find out if they have mentored K-awardees (check NIH RePORTER for their name as mentor)</li>\n</ul>\n\n<h2>Step 3: Craft Your Outreach Email</h2>\n<p>Your initial email should be:</p>\n<ul>\n<li>Short (under 200 words)</li>\n<li>Specific about why them (mention their work)</li>\n<li>Clear about what you're asking (a 20-minute conversation, not a lifetime commitment)</li>\n<li>Professional but human</li>\n</ul>\n\n<div class=\"callout\">\n<div class=\"callout-title\">📝 Sample Email Structure</div>\n<p><strong>Subject:</strong> Question about mentorship from [Your Program] trainee<br><br><strong>Body:</strong> Brief intro (who you are, your stage) → Why them specifically (cite their work) → What you're asking (meeting to discuss potential mentorship) → Thank you and availability</p>\n</div>\n\n<h2>Step 4: If You Don't Hear Back</h2>\n<p>Busy faculty miss emails. Send one follow-up after 7-10 days. If still no response, move on—lack of response is data about their availability.</p>\n\n<h2>Alternative Pathways</h2>\n<ul>\n<li>Ask your program director for introductions</li>\n<li>Attend departmental seminars and introduce yourself after</li>\n<li>Look for junior faculty who may have more time</li>\n<li>Consider mentorship committees (multiple mentors) if no single person fits</li>\n</ul>"
+    },
+    {
+      "id": 4,
+      "status": "published",
+      "category": "prevent",
+      "topic": "relocation",
+      "stages": ["student", "resident", "fellow", "early-faculty"],
+      "title": "Relocation Checklist: What to Do 60 Days Before Your Move",
+      "description": "A comprehensive checklist for medical trainees relocating for residency, fellowship, or faculty positions.",
+      "readTime": "7 min read",
+      "updated": "November 2025",
+      "sourcePatterns": ["relocation stress", "moving checklist", "residency transition"],
+      "content": "<p>Medical trainees relocate 3-5 times during training. Each move is stressful, expensive, and disruptive. This checklist helps you stay organized.</p>\n\n<h2>60 Days Out</h2>\n<ul>\n<li>Research your new city (neighborhoods, commute times, cost of living)</li>\n<li>Get quotes from moving companies (or budget for DIY move)</li>\n<li>If buying a home, get pre-approved for a physician mortgage</li>\n<li>Notify your current landlord if renting</li>\n<li>Start decluttering—less stuff = lower moving costs</li>\n</ul>\n\n<h2>45 Days Out</h2>\n<ul>\n<li>Book movers or reserve rental truck</li>\n<li>Begin apartment search or home shopping in earnest</li>\n<li>Arrange school transfers if you have children</li>\n<li>Request medical records for yourself and family</li>\n</ul>\n\n<h2>30 Days Out</h2>\n<ul>\n<li>Sign lease or close on home</li>\n<li>Set up utilities at new address</li>\n<li>File change of address with USPS</li>\n<li>Notify important contacts (banks, insurance, subscriptions)</li>\n<li>Get new state medical license (if applicable)</li>\n</ul>\n\n<h2>14 Days Out</h2>\n<ul>\n<li>Confirm moving arrangements</li>\n<li>Pack non-essentials</li>\n<li>Arrange pet travel if needed</li>\n<li>Return library books, borrowed items</li>\n</ul>\n\n<h2>Moving Day</h2>\n<ul>\n<li>Pack essentials bag (documents, medications, phone chargers, change of clothes)</li>\n<li>Do final walkthrough of old place</li>\n<li>Take photos for security deposit purposes</li>\n<li>Tip movers (if using a company)</li>\n</ul>\n\n<div class=\"callout callout-reach\">\n<div class=\"callout-title\">🏠 Relocate With REACH</div>\n<p>When you use REACH's free relocation service to find a home, a portion of the agent's commission funds REACH Fellowships. Same great service, same cost to you—but your move helps fund research training. <a href=\"#\" onclick=\"openRelocationModal(); return false;\" style=\"color: var(--color-teal-dark); font-weight: 500;\">Request relocation help →</a></p>\n</div>"
+    },
+    {
+      "id": 5,
+      "status": "published",
+      "category": "remove",
+      "topic": "research",
+      "stages": ["student", "resident", "fellow"],
+      "title": "Navigating IRB Submission: A Step-by-Step Guide",
+      "description": "Demystifying the IRB process for trainees submitting their first human subjects research protocol.",
+      "readTime": "9 min read",
+      "updated": "November 2025",
+      "sourcePatterns": ["IRB delays", "protocol submission", "regulatory confusion"],
+      "content": "<p>The IRB process intimidates many new researchers. This guide walks you through it step by step.</p>\n\n<h2>Before You Start</h2>\n<p>Complete required training (usually CITI certification). Most institutions won't let you submit without it.</p>\n\n<h2>Determine Your Review Level</h2>\n<ul>\n<li><strong>Exempt:</strong> Minimal risk, specific categories (surveys, existing data)</li>\n<li><strong>Expedited:</strong> Minimal risk, doesn't fit exempt categories</li>\n<li><strong>Full Board:</strong> Greater than minimal risk, vulnerable populations</li>\n</ul>\n\n<h2>Key Documents You'll Need</h2>\n<ul>\n<li>Protocol document (study design, methods, analysis plan)</li>\n<li>Informed consent form(s)</li>\n<li>Recruitment materials (flyers, emails, scripts)</li>\n<li>Data collection instruments (surveys, interview guides)</li>\n<li>HIPAA authorization (if accessing protected health information)</li>\n</ul>\n\n<h2>Common Reasons for Delays</h2>\n<ul>\n<li>Consent form language too complex (aim for 8th grade reading level)</li>\n<li>Missing HIPAA documentation</li>\n<li>Unclear data security plan</li>\n<li>Incomplete conflict of interest disclosure</li>\n</ul>\n\n<div class=\"callout\">\n<div class=\"callout-title\">⏰ Timeline Expectation</div>\n<p>Exempt reviews: 1-2 weeks. Expedited: 2-4 weeks. Full board: 4-8 weeks. Build this into your project timeline, and don't start recruiting until you have approval!</p>\n</div>"
+    },
+    {
+      "id": 6,
+      "status": "published",
+      "category": "identify",
+      "topic": "wellness",
+      "stages": ["student", "resident", "fellow", "early-faculty"],
+      "title": "Are You Heading Toward Burnout? Early Warning Signs for Trainees",
+      "description": "Recognizing the signs of burnout early and what to do about it before it derails your training.",
+      "readTime": "6 min read",
+      "updated": "November 2025",
+      "sourcePatterns": ["exhaustion", "cynicism", "work-life balance"],
+      "content": "<p>Burnout is endemic in medical training. Recognizing it early gives you more options for addressing it.</p>\n\n<h2>The Three Dimensions of Burnout</h2>\n\n<h3>Emotional Exhaustion</h3>\n<p>Signs: Feeling drained even after rest, dreading work, emotional numbness with patients</p>\n\n<h3>Depersonalization</h3>\n<p>Signs: Cynicism about medicine, viewing patients as problems rather than people, detachment from colleagues</p>\n\n<h3>Reduced Accomplishment</h3>\n<p>Signs: Feeling ineffective, questioning your career choice, inability to see your impact</p>\n\n<h2>Early Warning Signs</h2>\n<ul>\n<li>Sleep changes (too much or too little)</li>\n<li>Irritability with loved ones</li>\n<li>Difficulty concentrating</li>\n<li>Counting down days until vacation</li>\n<li>Avoiding pages or calls</li>\n<li>Physical symptoms (headaches, GI issues)</li>\n</ul>\n\n<h2>What To Do</h2>\n<ul>\n<li>Talk to someone (program director, mentor, EAP)</li>\n<li>Audit your schedule for one discretionary thing to cut</li>\n<li>Prioritize one restorative activity (doesn't have to be big)</li>\n<li>Consider whether your research/clinical balance is sustainable</li>\n</ul>\n\n<div class=\"callout\">\n<div class=\"callout-title\">🆘 If You're in Crisis</div>\n<p>Physician Support Line (free, confidential): 1-888-409-0141. Available to medical students, residents, and physicians.</p>\n</div>"
+    }
+  ],
+  "drafts": [],
+  "suggestions": []
+}
